@@ -13,4 +13,5 @@ print(the_eucladian_distance)
 # we also have to define the second point and ask the user for it 
 #a2 = int(input("enter the second cordiants on the x axis "))
 #b2 = int(input("enter the second cordiants on the y axis "))
-# second_cordiantes = (a2 , b2)
+# second_cordiantes = (a2 , b2) 
+# repo test
