@@ -1,0 +1,19 @@
+class Solution(object):
+   
+    def twoSum(self, nums, target):
+     is_it_in = {}
+     for i , num in enumerate(nums) :
+        
+        num_needed = target - num
+
+        if num_needed in is_it_in : 
+           print("found")
+           return [is_it_in[num_needed] , i]
+        is_it_in[num] = i
+        
+sol = Solution()
+
+
+
+
+        

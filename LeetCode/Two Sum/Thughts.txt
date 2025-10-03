@@ -1,0 +1,86 @@
+Q:Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.
+
+S:
+okay at first i thought , well if you wanted a crude and simple way you would do this in the example one 
+
+
+Example 1:
+
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+
+you would do this : nums[0] + nums[1] = ? , nums[0] + nums[2] = ? and so on ..
+
+
+but this is a stupid way 
+so i thought about my own way of thinking , if the target is 9  it could be 3 and 6 ? and so on ....
+
+i did not know how to implement this kind of logic so i searched around for somthing like this since i failed to come up with a more simple way like using if and fors and whiles , i found out i have to use hash map , i dont know what is hash map so lets dive into it 
+
+i ran into this 
+https://www.geeksforgeeks.org/python/hash-map-in-python/
+
+Hash maps are indexed data structures. A hash map makes use of a hash function to compute an index with a key into an array of buckets or slots. Its value is mapped to the bucket with the corresponding index. The key is unique and immutable. Think of a hash map as a cabinet having drawers with labels for the things stored in them. For example, storing user information- consider email as the key, and we can map values corresponding to that user such as the first name, last name etc to a bucket.  
+
+now i have some kind idea what hash map is , but i havent learned fully 
+
+
+i asked chatgpt :
+
+
+Good question — let’s untangle that.
+
+A hash map (also called a dictionary in Python, or an object/map in JavaScript, or an unordered_map in C++) is just a way to store data so you can look things up really fast.
+
+Imagine you have a bunch of labeled boxes:
+
+One box is labeled "apple" and inside it is the value 5.
+
+Another is labeled "banana" with the value 12.
+
+If I ask, “What’s the value for banana?” you don’t need to search through every box — you jump straight to the one labeled "banana".
+
+That’s what a hash map does:
+
+Key: the label (like "banana")
+
+Value: what’s stored there (like 12)
+
+In Python, you already use it:
+
+fruit = {"apple": 5, "banana": 12}
+print(fruit["banana"])  # prints 12
+
+
+Behind the scenes, the “hash” part means it takes the key ("banana") and runs it through a function that tells the computer exactly where to find that box in memory. That’s why lookup is so fast — usually O(1), constant time.
+
+so i had the idea that what if we could do this :
+
+target - nums [0] = seen in the nums ? 
+
+this logic works , but we want to return the index 
+
+
+
+you might ask why dictionry ?
+bc thats hash map in python , instead of searching through out the list everytime , we use dic 
+CODE CHECK :
+lets break the code up again , 
+Function created 
+we creat a dictionary bc thats a kind of hashmap 
+we creat for loop that does several things
+we set this for loop like this “Go through the list nums. For each element, give me two things: the position (i) and the value (num).”
+then ew creat a num_needed that represents the number we are goint to want to locate later 
+we creat a if that checks if num_needed is in is_is_in dict if it is says found and returns the number and its position
+
+
+
+
+
+
+
