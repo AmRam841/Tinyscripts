@@ -1,0 +1,7 @@
+//i just learned this ! 
+var createHelloWorld = function() {
+    
+    return function(...args) {
+         print("Hello World")
+    }
+}
