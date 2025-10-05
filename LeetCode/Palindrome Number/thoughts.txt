@@ -1,0 +1,10 @@
+well i think if you take the last number of the number and put it into a new var then repeat this we have out answer but how ? 
+when i tried with for i found i have to make it a string . what about while ? nah i like a for 
+i found this
+ % 10 → extracts the last digit.
+
+//= 10 → removes the last digit.
+
+
+
+well i
