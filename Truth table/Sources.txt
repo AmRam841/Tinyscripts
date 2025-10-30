@@ -1,0 +1,45 @@
+this document is here for You!
+in order to write the code we need some direction , this is a math problem after all ! 
+i cant tell you why you would like to learn this beside the pure  theorical and mathematic curosity.
+-----------------------------------------------
+things to know :
+Cartesian Product of Sets:
+The Cartesian product of two sets, denoted by A × B, is the collection of all possible ordered pairs (a, b) such that the first element a belongs to set A and the second element b belongs to set B. It is written in set builder form as:
+A × B = {(a, b) : a ∈ A and b ∈ B}
+
+
+--------------------------------------------
+Truth Table
+Last Updated : 23 Jul, 2025
+A Truth Table is a table that lists all the possible combinations of inputs and their corresponding outputs. 
+It shows how the output of logic circuits changes with different combinations of logic levels at the input. 
+It is mostly associated with Boolean algebra or areas where Boolean logic is used. 
+It is a branch of algebra where there are only two values possible true and false.
+
+--
+AND & NAND Operation
+AND gate is one of the basic operations of Boolean algebra that gives an output is 1 when all inputs are 1 otherwise the output is 0.
+ The operation between two inputs will be A.B which is read as A AND B.
+
+The NAND (NOT AND) is also a binary operator that is used as a universal logic gate and can be used to implement other gates.
+ If at least one of the inputs is 0 the output is 1 else the output is 0.
+ The operation between two operands will be A ⊼ B which is read as A NAND B.
+
+--
+OR and NOR Operation
+OR gate is also a basic operation of Boolean algebra that gives an output is 1 when at least one input is 1 otherwise the output is 0.o 0.
+ The operation between two inputs will be A + B or A ∨ B which is read as A OR B.
+
+The NOR (NOT OR) is also a binary operator that gives output 1 when both the inputs are 0 else output is 1. 
+The operation between two operands will be A ⊽ B which is read as A NOR B.
+--
+XOR Operator
+The XOR (Exclusive or) is another binary operator that gives output 1 when all the inputs are different else the output is 0. 
+The operation between two operands will be A⊕B which is read as A XOR B.
+---------------------------------
+
+
+
+
+*in the pressence of lists like [a , b ] and tuples (True,False) we use zip() , but zip does not know anything so order matters *
+* we use product() so we can have all the possible combinations*
