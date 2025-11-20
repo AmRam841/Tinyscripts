@@ -41,6 +41,19 @@ if __name__ == "__main__" : # for making this useable for anyone who wants to im
      formula = input("Give me the fromula using python logic : ")
      Truth_table(vars,formula)
 
+#satisfiability check
+#def is_satisfiable(variables, formula):
+    #for values in product([True, False], repeat=len(variables)):
+       # eval_env = dict(zip(variables, values))
+       # try:
+         #   result = eval(formula, {}, eval_env)
+        #    if result:
+       #         return True
+      #  except Exception as e:
+     #       print(f"Error evaluating formula: {e}")
+    #        return False
+   # return False
+
      
 
 

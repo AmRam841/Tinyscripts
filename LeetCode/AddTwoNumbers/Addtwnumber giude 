@@ -1,0 +1,40 @@
+lets start 
+what do you see? 
+i see it talks about linked lists , lets research that , 
+from geeks for geeks :
+A linked list is a type of linear data structure similar to arrays. It is a collection of nodes that are linked with each other.
+ A node contains two things first is data and second is a link that connects it with another node.
+ Below is an example of a linked list with four nodes and each node contains character data and a link to another node.
+ Our first node is where head points and we can access all the elements of the linked list using the head.
+
+ lets disect the code in this site 
+
+ class Node:
+ //this is for defining a __init__ function that initilize the node with the data passed as an argument and a none because 
+ if we have only one node there is no nodes to refre this basiclly defines the properties of a node 
+    def __init__(self, value):
+        self.data = value
+        self.prev = None
+        self.next = None
+
+if __name__ == "__main__": //this part says : if im running as a script i should be executed but as a module i should not  and makes the head node without it is lost in the void 
+
+    # Create the first node (head of the list)
+    head = Node(10)
+
+    # Create and link the second node
+    head.next = Node(20)
+    head.next.prev = head
+
+    # Create and link the third node
+    head.next.next = Node(30)
+    head.next.next.prev = head.next
+
+    # Create and link the fourth node
+    head.next.next.next = Node(40)
+    head.next.next.next.prev = head.next.next
+
+    # Traverse the list forward and print elements
+ 
+
+ now lets do this from memory 
